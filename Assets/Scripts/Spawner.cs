@@ -30,14 +30,21 @@ public class Spawner : MonoBehaviour
 
         entityManager.AddComponentData(myEntity, new Translation
         {
-            Value = new float3(1,2,3)
+            Value = float3.zero
         });
 
-        entityManager.AddSharedComponentData(myEntity, new RenderMesh
-        {
-            material = unitMaterial,
-            mesh = unitMesh
-        });
+        //Use the statement below when not using URP or HDRP
+        
+        // entityManager.AddSharedComponentData(myEntity, new RenderMesh
+        // {
+        //     material = unitMaterial,
+        //     mesh = unitMesh
+        // });
+        
+        //Use statement below when using URP or HDRP
+        
+        RenderMeshUtility.AddComponents(myEntity,entityManager,new RenderMeshDescription(unitMesh,unitMaterial));
+        
     }
     
 }

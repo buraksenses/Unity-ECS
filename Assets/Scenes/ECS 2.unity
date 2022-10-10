@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19561956beb33a44db223081d1e27cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  unitMaterial: {fileID: 2100000, guid: 35e34deb2de0f2f4288682797c490503, type: 2}
   unitMesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &25986773
 Transform:
